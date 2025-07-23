@@ -1,5 +1,10 @@
-export function Footer(){
-    return(
-        <div>Footer</div>
-    )
+import './Footer.css'
+function Footer() {
+  return (
+    <footer>
+      <p>Tarefas Inteligentes &copy; 2025</p>
+    </footer>
+  );
 }
+
+export default Footer;

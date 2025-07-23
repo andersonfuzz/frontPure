@@ -1,16 +1,19 @@
 import './App.css'
-import { Card } from './components/Card/Card.jsx'
-import { Footer } from './components/Footer/Footer.jsx'
-import { Header } from './components/Header/Header.jsx'
+import Header from './components/Header/Header.jsx'
+import Footer from './components/Footer/Footer.jsx'
+import Page from './components/Page/Page.jsx'
 
 function App() {
 
   return (
-    <>
-      <Header></Header>
-      <Card></Card>
-      <Footer></Footer>
-    </>
+
+    <div>
+      <Header />
+      <main>
+        <Page />
+      </main>
+      <Footer />
+    </div>
   )
 }
 
