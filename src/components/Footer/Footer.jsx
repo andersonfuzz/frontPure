@@ -1,10 +1,12 @@
-import './Footer.css'
-function Footer() {
+import React from 'react';
+import './Footer.css';
+
+const Footer = () => {
   return (
-    <footer>
-      <p>Tarefas Inteligentes &copy; 2025</p>
+    <footer className="footer">
+      <p>Feito por Anderson · 2025</p>
     </footer>
   );
-}
+};
 
 export default Footer;

@@ -1,10 +1,16 @@
-import './Header.css'
-function Header() {
+import './Header.css';
+import { FaPlus } from 'react-icons/fa';
+
+const Header = () => {
   return (
-    <header>
-      <h1>O que vamos planejar hoje?</h1>
+    <header className="header">
+      <h1 className="header-title">Minhas Tarefas</h1>
+      <button className="add-button">
+        <FaPlus />
+        <span>Nova Tarefa</span>
+      </button>
     </header>
   );
-}
+};
 
 export default Header;

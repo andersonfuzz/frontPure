@@ -1,20 +1,21 @@
-import './App.css'
-import Header from './components/Header/Header.jsx'
-import Footer from './components/Footer/Footer.jsx'
-import Page from './components/Page/Page.jsx'
+import React from 'react';
+import Sidebar from './components/Sidebar/Sidebar';
+import Header from './components/Header/Header';
+import './App.css';
 
-function App() {
-
+const App = () => {
   return (
-
-    <div>
-      <Header />
-      <main>
-        <Page />
+    <div className="app-layout">
+      <Sidebar />
+      <main className="main-content">
+        <Header />
+        <section className="task-area">
+          {/* Aqui vamos colocar a TaskList futuramente */}
+          <p style={{ color: '#ccc' }}>Nenhuma tarefa por enquanto.</p>
+        </section>
       </main>
-      <Footer />
     </div>
-  )
-}
+  );
+};
 
-export default App
+export default App;

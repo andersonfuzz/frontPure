@@ -1,9 +1,32 @@
-header {
-    background-color: #282c34;
-    padding: 0.5rem 1rem;
-    color: white;
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #2a2a2a;
+  padding: 20px;
+  border-bottom: 1px solid #444;
+  color: #fff;
 }
-header h1 {
-    font-size: 1.25rem;
-    margin: 0;
+
+.header-title {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.add-button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background-color: #3b3b3b;
+  color: #fff;
+  border: none;
+  padding: 10px 14px;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.add-button:hover {
+  background-color: #505050;
 }
