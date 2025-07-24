@@ -6,7 +6,7 @@
   padding: 24px 16px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-start;
   border-right: 1px solid #333;
 }
 
@@ -43,21 +43,3 @@
   color: #fff;
 }
 
-.new-task-button {
-  background-color: #4caf50;
-  color: white;
-  border: none;
-  padding: 12px;
-  border-radius: 8px;
-  font-size: 1rem;
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  justify-content: center;
-  cursor: pointer;
-  transition: background 0.3s ease;
-}
-
-.new-task-button:hover {
-  background-color: #45a045;
-}

@@ -21,10 +21,6 @@ const Sidebar = () => {
         </button>
       </nav>
 
-      <button className="new-task-button">
-        <FaPlus />
-        <span>Nova Tarefa</span>
-      </button>
     </aside>
   );
 };

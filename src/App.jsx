@@ -1,6 +1,7 @@
-import React from 'react';
-import Sidebar from './components/Sidebar/Sidebar';
-import Header from './components/Header/Header';
+import Sidebar from './components/Sidebar/Sidebar.jsx';
+import Header from './components/Header/Header.jsx';
+import TaskList from './components/TaskList/TaskList.jsx';
+
 import './App.css';
 
 const App = () => {
@@ -10,6 +11,7 @@ const App = () => {
       <main className="main-content">
         <Header />
         <section className="task-area">
+          <TaskList />
           {/* Aqui vamos colocar a TaskList futuramente */}
           <p style={{ color: '#ccc' }}>Nenhuma tarefa por enquanto.</p>
         </section>

@@ -1,22 +1,10 @@
 .task-item {
-  background-color: #2c2c2c;
+  width: 100%;
+  border: 1px solid #ccc;
   border-radius: 8px;
   padding: 16px;
-  transition: background-color 0.3s;
-  border-left: 6px solid #444;
-  color: #fff;
-}
-
-.task-item.low {
-  border-left-color: #2e8b57; /* verde escuro */
-}
-
-.task-item.normal {
-  border-left-color: #4682b4; /* azul */
-}
-
-.task-item.high {
-  border-left-color: #b22222; /* vermelho escuro */
+  margin-bottom: 16px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 }
 
 .task-header {
@@ -25,52 +13,44 @@
   align-items: center;
 }
 
-.priority-group {
+.task-actions {
   display: flex;
-  gap: 16px;
-  margin-top: 12px;
-  font-size: 14px;
+  gap: 8px;
 }
 
-.priority-group input[type="radio"] {
-  margin-right: 4px;
+.task-description {
+  margin-top: 8px;
+  margin-bottom: 16px;
+  color: #333;
 }
 
-.toggle {
+.task-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.status label {
   display: flex;
   align-items: center;
   gap: 8px;
 }
 
-.toggle input[type="checkbox"] {
-  display: none;
+.priority {
+  display: flex;
+  gap: 12px;
 }
 
-.slider {
-  width: 36px;
-  height: 18px;
-  background-color: #555;
-  border-radius: 999px;
-  position: relative;
-  cursor: pointer;
+.priority label {
+  display: flex;
+  align-items: center;
+  gap: 4px;
 }
 
-.slider::before {
-  content: "";
-  position: absolute;
-  width: 14px;
-  height: 14px;
-  left: 2px;
-  top: 2px;
-  background-color: white;
-  border-radius: 50%;
-  transition: transform 0.2s ease;
-}
-
-input:checked + .slider::before {
-  transform: translateX(18px);
-}
-
-.toggle-label {
-  font-size: 14px;
+.dates {
+  font-size: 0.85rem;
+  color: #555;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
 }
